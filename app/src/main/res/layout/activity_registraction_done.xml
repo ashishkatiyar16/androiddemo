@@ -1,0 +1,28 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="com.bookmypacket.bmpclub.ui.RegistractionDoneActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+    <ImageView
+        android:id="@+id/iv_thumps_up"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/image_height"
+        android:adjustViewBounds="false"
+        android:scaleType="centerInside"
+        android:layout_marginTop="96dp"
+        android:src="@drawable/ic_thumps_up"/>
+    <TextView
+        android:id="@+id/fullscreen_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/text_registration_confirm"
+        android:textColor="#33b5e5"
+        android:textSize="24sp"
+        android:textStyle="bold"/>
+
+</FrameLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.bookmypacket.bmpclub.ui.WalletTopupActivity">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_deposit_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/et_deposit_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_deposit_amount"
+            android:inputType="number"
+            android:maxLength="7"
+            android:maxLines="1"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:id="@+id/btn_cash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/til_deposit_amount"
+        android:layout_marginTop="@dimen/margin_cards"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:padding="@dimen/margin_cards"
+        android:text="@string/btn_deposit_cash"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@color/icons"/>
+
+    <TextView
+        android:id="@+id/btn_ebs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_cash"
+        android:layout_marginTop="@dimen/margin_cards"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:padding="@dimen/margin_cards"
+        android:text="@string/btn_deposit_ebs"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@color/icons"/>
+</RelativeLayout>

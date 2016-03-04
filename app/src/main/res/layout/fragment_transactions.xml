@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:card_view="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_cards"
+        android:layout_marginLeft="@dimen/margin_cards"
+        android:layout_marginRight="@dimen/margin_cards"
+        android:background="@color/secondary_text"
+        card_view:cardCornerRadius="@dimen/card_radius">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_cards"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_txtype"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_cash"/>
+
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_txdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="asahsa"/>
+
+                <TextView
+
+                    android:id="@+id/tv_transactionId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="asasa"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_tx_amount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="+11212"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

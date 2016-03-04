@@ -1,0 +1,244 @@
+<resources>
+    <string name="app_name">BMP Club</string>
+    <string name="action_settings">Settings</string>
+    <string name="sign_in">Sign in</string>
+    <string name="sign_up">Sign up</string>
+    <string name="tncText"><![CDATA[Terms & Conditions]]></string>
+    <string name="ppText">Privacy Policy</string>
+    <string name="bmp_logo_description">BookMyPacket Logo</string>
+    <string name="title_activity_bmpmobile_number">Mobile Number</string>
+
+    <string name="phone_msg">Please enter your phone number</string>
+    <string name="waiting_sms_text">Waiting to detect SMS code sent to</string>
+    <string name="sms_manual_text">You can enter the code manually</string>
+    <string name="country_code_india">+91</string>
+    <string name="title_activity_mobile_number">Verifying Phone</string>
+    <string name="otp_text">Enter code</string>
+    <string name="title_activity_register_step1">Step 1 (Personal Info)</string>
+    <string name="mobile_hint">Mobile Number</string>
+    <string name="first_name_hint">First name</string>
+    <string name="hint_middle_name">Middle name</string>
+    <string name="hint_last_name">Last name</string>
+    <string name="hint_email_address">Email Address</string>
+    <string name="hint_employee_id">Employee Id (optional)</string>
+    <string name="title_activity_register_step2">Step 2 (Address)</string>
+    <string name="hint_address1">Address line 1</string>
+    <string name="hint_address2">Address line 2</string>
+    <string name="hint_address3">Address line 3</string>
+    <string name="hint_landmark">Nearest Landmark (optional)</string>
+    <string name="hint_pincode">Pincode</string>
+    <string name="hint_city">City</string>
+    <string name="hint_state">State</string>
+    <string name="title_activity_register_step3">Step 3 (Identification)</string>
+    <string name="hint_service_area_delivery">Delivery Service Areas</string>
+    <string name="hint_service_area_pickup">Pickup Service Areas</string>
+    <string name="hint_service_tax">Service Tax/Pan No</string>
+    <string name="hint_id_proof_no">Id Proof No</string>
+    <string name="hint_vehicalNo">Vehicle Registration No</string>
+    <string-array name="id_tax_types">
+        <item>Pan Card</item>
+        <item>Service Tax</item>
+    </string-array>
+    <string-array name="id_proof_types">
+        <item>Select Proof Type</item>
+        <item>Pan Card</item>
+        <item>Driving License</item>
+        <item>Aadhaar Card</item>
+        <item>Passport No</item>
+        <item>Voter Id Card</item>
+        <item>Manrega Card</item>
+    </string-array>
+    <string-array name="vehical_type">
+        <item>Select Vehicle Type(Optional)</item>
+        <item>Bike</item>
+        <item>Car</item>
+        <item>Tempo</item>
+    </string-array>
+    <string-array name="packt_status">
+        <item>Delivery Attempted - Address not found</item>
+        <!--<item>Damaged in transit</item>-->
+        <item>Undeliver : Customer Not Available</item>
+        <!--<item>Awaiting alternative instructions from consignee</item>-->
+        <item>Consignee refused to accept shipment</item>
+        <item>Shipment delayed due to Bad Weather</item>
+        <item>Delivery Attempted - Door/Office Closed</item>
+        <item>Attempted Delivery - Payment not Ready / Delivery Rescheduled</item>
+        <item>Deliver Attempted - Access Restricted</item>
+        <item>Consignee Shifted</item>
+        <item>Contact No - Not correct /Not Reachable</item>
+    </string-array>
+    <string-array name="array_image_actions">
+        <item>Take Photo</item>
+        <item>Choose from Library</item>
+    </string-array>
+    <string name="title_activity_register_step6">Step 6 (Security Deposit)</string>
+    <string name="title_activity_register_step4">Step 4 (Bank Details)</string>
+    <string name="btn_continue_text">Next</string>
+    <string name="appttentive_key">8c93efc3063fb0ae1876cb10793f4763d73698e921f8051b409e24f7c8175e04</string>
+    <string name="btn_select_id_tx">Upload Tax Id</string>
+    <string name="btn_select_id_proof">Upload Id Proof</string>
+    <string name="btn_select_id_address">Address Proof</string>
+    <string name="btn_selfie">Take Selfie</string>
+    <string name="title_activity_register_step5">Step 5 (Document Upload)</string>
+    <string name="btn_select_id_cheque">Select Cheque</string>
+    <string name="account_hint">Bank Account Number</string>
+    <string name="ifsc_code_hint">IFSC Code</string>
+    <string name="hint_bank_name">Bank Name</string>
+    <string name="hint_bank_branch">Bank Branch Name (City)</string>
+    <string name="hint_nameBank">Full Name in bank account</string>
+    <string name="pd_registration_profile_title">Registration</string>
+    <string name="pd_registration_profile_message">Uploading info....</string>
+    <string name="json_error">Unknown System Error</string>
+    <string name="pd_registration_images_message">Uploading.....</string>
+    <string name="pd_wait">Login Progress.....</string>
+    <string name="til_hint_security_amount">Security Amount</string>
+    <string name="title_activity_bmpjobs">BMPJobsActivity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="hint_enter_coupon">Enter Coupon</string>
+    <string name="btn_cash_text">Deposit Cash</string>
+    <string name="btn_ebs_text">Pay using Card</string>
+    <string name="payment_failure_message">Transaction has been cancelled</string>
+    <string name="hostname">EBS</string>
+    <string name="error_security_high">Amount should be less then \u20b9 10,000</string>
+    <string name="error_security_low">Security amount cannot be less then \u20b9 1000</string>
+
+    <string name="title_activity_registraction_done">Registration Status</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="text_registration_confirm">Thanks for registering as club member. we will inform you once your status is confirmed</string>
+    <string name="btn_accept_pkt_text">Accept Packet</string>
+    <string name="btn_update_pkt_text">Update Status</string>
+    <string name="btn_deliver_pkt_text">Deliver</string>
+    <string name="action_faq">FAQ</string>
+
+    <string name="title_activity_bmpdelivery_confirmation">Confirm Delivery</string>
+    <string name="confirm_delivery">Mark Delivered</string>
+    <string name="title_activity_bmpdelivery">Deliver Packet</string>
+    <string name="select_status">Select Status</string>
+    <string name="err_mandatory">Field cannot be empty</string>
+    <string name="error_email">Email is mandatory</string>
+    <string name="error_fname">Firstname cannot be empty</string>
+    <string name="error_lname">Lastname cannot be empty</string>
+    <string name="error_mobileNo">Mobile no cannot be empty</string>
+    <string name="error_mobile_length">Enter valid mobile no</string>
+    <string name="error_validemail">Email must be valid email</string>
+    <string name="toast_empty">Fill the form correctly in order to continue</string>
+    <string name="error_address1">Address Line1 is mandatory</string>
+    <string name="error_city">City is mandatory field</string>
+    <string name="error_state">State is required</string>
+    <string name="error_pincode">pincode is required</string>
+    <string name="error_delivery">Delivery pincodes are required</string>
+    <string name="error_pickup">Pick pincodes mandatory</string>
+    <string name="error_idproof">Id proof number is mandatory</string>
+    <string name="error_taxId">Tax/Pan card no is required</string>
+    <string name="error_accNo">Bank account nos is required</string>
+    <string name="error_bankbranch">Branch Name is mandatory</string>
+    <string name="error_bank">Bank name is mandatory</string>
+    <string name="error_ifsc_code">IFSC code of account is required</string>
+    <string name="error_name_account">Name in bank account is required</string>
+    <string name="toast_documents">All documents required</string>
+    <string name="alert_img_btn_cancel">Cancel</string>
+    <string name="title_selfie">Take Selfie</string>
+    <string name="title_address_proof">Select Address proof</string>
+    <string name="title_idproof">Select Id Proof</string>
+    <string name="title_cheque">Select Cancelled Cheque</string>
+    <string name="title_taxId">Select Tax id</string>
+    <string name="title_activity_bmpclub_profile">BMPClubProfileActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_profile">Profile</string>
+    <string name="nav_wallet">My Money</string>
+    <string name="nav_email">Email Us</string>
+    <string name="nav_group_title">Communicate</string>
+    <string name="title_activity_bmpwallet">Wallet Summary</string>
+    <string name="wallet_end">No More Transactions</string>
+    <string name="wallet_packet_cost_locked">Locked for Packet</string>
+    <string name="wallet_packet_hold_release">Amount Released</string>
+    <string name="wallet_pending_amount">Amount put on hold</string>
+    <string name="wallet_reim_hold">Hold for reimbursement</string>
+    <string name="til_hint_withdrawal">Amount For Withdrawal</string>
+    <string name="radio_option_cash">Withdraw cash from branch</string>
+    <string name="radio_option_neft">Auto Credit to My Bank Account</string>
+    <string name="error_withdrawal_max">Maximum amount for withdraw allowed</string>
+    <string name="pd_wallet_withdraw">Wait...</string>
+    <string name="earning_title">Commission</string>
+    <string name="size_label">Size:</string>
+    <string name="weight_label">Weight:</string>
+    <string name="location_title">Delivery Location:</string>
+    <string name="hostname_topup">bmp_topup</string>
+    <string name="btn_deposit_cash">Deposit Cash</string>
+    <string name="btn_deposit_ebs">Deposit Online</string>
+    <string name="hint_deposit_amount">Deposit Amount (minimum \u20b9 500)</string>
+    <string name="error_til_deposit">Minimum Amount should be \u20B9 500</string>
+    <string name="nav_withdraw">Withdraw</string>
+    <string name="nav_deposit">Deposit</string>
+    <string name="empty_bmp_packets">Currently no packet available for delivery</string>
+    <string name="empty_bmp_packets_u">No packets available for your service area</string>
+    <string name="title_awb">AWB:</string>
+    <string name="cod_title">COD Amount:</string>
+    <string name="btn_call_customer">Call Customer</string>
+    <string name="delivery_otp">Delivery OTP</string>
+    <string name="delivery_cod">COD Amount</string>
+    <string name="btn_select_cust_proof">Capture ID Proof</string>
+    <string name="title_cod_alert">Delivery Alert</string>
+    <string name="btn_cancel_text">Cancel</string>
+    <string name="btn_ok_text">OK</string>
+    <string name="alert_submit_without_otp">You are trying to deliver packet without OTP. It may delay your payout for this packet by 7 days. Do you want to continue?</string>
+    <string name="cod_required">This is COD packet. collect \u20b9 </string>
+    <string name="customer_id_required">Customer Id Proof is required</string>
+    <string name="customer_id_type_required">Customer Id Proof type required</string>
+    <string name="customer_photo_required">Customer Id Proof Photo Required</string>
+    <string name="action_logout">Logout</string>
+    <string name="bmp_cc_email">contact@boomypacket.com</string>
+    <string name="bm_email_subject">Member Query -</string>
+    <string name="nav_message">Call Us</string>
+    <string name="bmp_cc_number">tel:+919999373737</string>
+    <string name="phone_permission">Device Permissions restricted for phone call</string>
+    <string name="del_pincode">Pincode</string>
+    <string name="phone_not_available">Customer Phone Not available</string>
+    <string name="phone_error">Unable to initiate call</string>
+
+    <string name="title_activity_no_network">No Internet</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="empty_no_network">Internet Connectivity Lost. Try after sometime</string>
+    <string name="title_activity_register_step_pincodes">Step (Pin codes)</string>
+    <string name="spinner_pickup_center">Select Branch for Packet Pickups</string>
+    <string name="spinner_drop_center">Branch to Drop Picked Packets</string>
+    <string name="packet_accepted">Packet Accepted Refresh the list to update packets</string>
+    <string name="btn_pkt_release_text">Release Packet</string>
+    <string name="btn_pick_text">Pick Packet</string>
+    <string name="payment_success">Payment Successful</string>
+    <string name="pd_hub_list">Getting Hub Lists..</string>
+    <string name="pd_branch_list">Getting List of BMP Branches</string>
+    <string name="pd_pincodes">Wait Fetching Data...</string>
+    <string name="toast_location">Enable location to signup</string>
+    <string name="accept_tnc"><![CDATA[I agree to the terms and conditions]]></string>
+    <string name="tnc_text">Terms and Conditions Agreement yet to created</string>
+    <string name="available_earning">Total Earnings Available</string>
+    <string name="cod_earned">COD Collection: \u20b9 </string>
+    <string name="commission_available">Earning Available: \u20b9 </string>
+    <string name="commission_progress">Earning Pending: \u20b9 </string>
+    <string name="commission_earned">Total Earned: \u20b9 </string>
+    <string name="packet_status_update">Packet Status Updated</string>
+    <string name="status_marked">Packet status updated</string>
+    <string name="toast_location_update">Location Must be enabled to continue</string>
+    <string name="payment_gateway_error">Payment Gateway Misbehaved. try again</string>
+    <string name="no_geocoder_available">Google Geocoding Service unavailable</string>
+    <string name="toast_google_location">Unable to connect Google service try again</string>
+    <string-array name="bank_names_list">
+        <item>Select Bank</item>
+        <item>ANDHRA BANK</item>
+        <item>BANK OF INDIA</item>
+        <item>BANK OF BARODA</item>
+        <item>STATE BANK OF INDIA</item>
+        <item>PUNJAB NATIONAL BANK</item>
+    </string-array>
+    <string name="error_address2">Address Line2 is mandatory</string>
+    <string name="nav_statement">Statement Request</string>
+    <string name="bm_email_statement">Request For Historical Statement-</string>
+    <string name="nav_inbox">Inbox</string>
+    <string name="btn_attempt_text">Attempted</string>
+    <string name="title_packet_avilable">AVAILABLE</string>
+    <string name="title_packet_in_progess">IN PROGRESS</string>
+    <string name="title_completed">COMPLETED</string>
+</resources>

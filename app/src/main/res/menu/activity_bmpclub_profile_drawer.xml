@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_wallet"
+            android:icon="@drawable/ic_menu_wallet"
+            android:title="@string/nav_wallet"/>
+        <item
+            android:id="@+id/nav_deposit"
+            android:icon="@drawable/ic_deposit"
+            android:title="@string/nav_deposit"/>
+        <item
+            android:id="@+id/nav_withdraw"
+            android:icon="@drawable/ic_withdraw"
+            android:title="@string/nav_withdraw"/>
+    </group>
+
+    <item android:title="@string/nav_group_title">
+        <menu>
+            <item
+                android:id="@+id/nav_statement"
+                android:icon="@drawable/ic_menu_history"
+                android:title="@string/nav_statement"/>
+            <item
+                android:id="@+id/nav_email"
+                android:icon="@drawable/ic_menu_email"
+                android:title="@string/nav_email"/>
+            <item
+                android:id="@+id/nav_inbox"
+                android:icon="@drawable/ic_menu_inbox"
+                android:title="@string/nav_inbox"/>
+            <item
+                android:id="@+id/nav_contact"
+                android:icon="@drawable/ic_menu_phone"
+                android:title="@string/nav_message"/>
+        </menu>
+    </item>
+
+</menu>

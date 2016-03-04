@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.bookmypacket.bmpclub.ui.WithdrawMoneyActivity">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_with_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/et_with_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/til_hint_withdrawal"
+            android:inputType="number"
+            android:maxLength="7"
+            android:maxLines="1"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_mode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/til_with_amount"
+        android:layout_margin="@dimen/margin_cards">
+
+        <RadioButton
+
+            android:id="@+id/rb_cash"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_option_cash"/>
+
+        <RadioButton
+            android:id="@+id/rb_neft"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/radio_option_neft"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/btn_continue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rg_mode"
+        android:layout_marginTop="@dimen/margin_cards"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:padding="@dimen/margin_cards"
+        android:text="@string/btn_continue_text"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@color/icons"/>
+</RelativeLayout>

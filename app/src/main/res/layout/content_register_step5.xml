@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.RegisterStep5Activity"
+    tools:showIn="@layout/activity_register_step5">
+
+    <LinearLayout
+        android:id="@+id/ll_row1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_cards"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_idTax"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/image_height"
+                android:adjustViewBounds="false"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_tex_id"/>
+
+            <TextView
+                android:id="@+id/btn_idTax"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_cards"
+                android:background="@color/overlay_black_15p"
+                android:elevation="@dimen/button_elevation"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="@string/btn_select_id_tx"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/icons"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_cards"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_idProof"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/image_height"
+                android:adjustViewBounds="false"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_id_proof"/>
+
+            <TextView
+                android:id="@+id/btn_idProof"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_cards"
+                android:background="@color/overlay_black_15p"
+                android:elevation="@dimen/button_elevation"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="@string/btn_select_id_proof"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/icons"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_row2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_cards"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_addressProof"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/image_height"
+                android:adjustViewBounds="false"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_address_proof"/>
+
+            <TextView
+                android:id="@+id/btn_addressProof"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_cards"
+                android:background="@color/overlay_black_15p"
+                android:elevation="@dimen/button_elevation"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="@string/btn_select_id_address"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/icons"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_cards"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_selfie"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/image_height"
+                android:adjustViewBounds="false"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_selfie"/>
+
+            <TextView
+                android:id="@+id/btn_selfie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_cards"
+                android:background="@color/overlay_black_15p"
+                android:elevation="@dimen/button_elevation"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="@string/btn_selfie"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/icons"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_row3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_cards"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_id_cheque"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/image_height"
+                android:adjustViewBounds="false"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_cheque"/>
+
+            <TextView
+                android:id="@+id/btn_id_cheque"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_cards"
+                android:background="@color/overlay_black_15p"
+                android:elevation="@dimen/button_elevation"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="@string/btn_select_id_cheque"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/icons"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btn_continue"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginTop="@dimen/margin_cards"
+        android:background="@color/colorAccent"
+        android:elevation="@dimen/button_elevation"
+        android:gravity="center"
+        android:text="@string/btn_continue_text"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/icons"
+    android:drawableEnd="@drawable/ic_btn_next"
+    android:drawableRight="@drawable/ic_btn_next"/>
+</LinearLayout>

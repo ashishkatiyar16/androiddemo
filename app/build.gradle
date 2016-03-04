@@ -1,0 +1,71 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+dependencies {
+    compile project(':volley')
+    compile project(':EBS')
+    compile 'com.android.support:support-v4:23.1.1'
+    compile 'com.android.support:recyclerview-v7:23.1.1'
+}
+android {
+    signingConfigs {
+        milestone {
+            keyAlias 'bmp-milestone'
+            keyPassword 'cfeindia'
+            storeFile file('bmp_milestone.jks')
+            storePassword 'cfeindia'
+        }
+    }
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+    defaultConfig {
+        applicationId "com.bookmypacket.bmpclub"
+        minSdkVersion 14
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.1"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        productFlavors {
+            uat {
+                buildConfigField "String", "BASE_URL", "\"http://uat002.bookmypacket.com:8080/bmp/api/\""
+                buildConfigField "String", "GCM_API_KEY", "\"AIzaSyDtNW4p99yOQffio7obUMO_66PUHpxU-1E\""
+                resValue "string", "GOOGLE_API_KEY", "AIzaSyDtNW4p99yOQffio7obUMO_66PUHpxU-1E"
+            }
+            staging {
+                buildConfigField "String", "BASE_URL", "\"http://preprod001.bookmypacket.com:8080/bmp/api/\""
+                buildConfigField "String", "GCM_API_KEY", "\"AIzaSyDtNW4p99yOQffio7obUMO_66PUHpxU-1E\""
+                resValue "string", "GOOGLE_API_KEY", "AIzaSyDtNW4p99yOQffio7obUMO_66PUHpxU-1E"
+            }
+            production {
+                buildConfigField "String", "BASE_URL", "\"http://preprod001.bookmypacket.com:8080/bmp/api/\""
+                buildConfigField "String", "GCM_API_KEY", "\"AIzaSyDtNW4p99yOQffio7obUMO_66PUHpxU-1E\""
+                resValue "string", "GOOGLE_API_KEY", "AIzaSyDtNW4p99yOQffio7obUMO_66PUHpxU-1E"
+            }
+        }
+    }
+    dependencies {
+        compile fileTree(dir: 'libs', include: ['*.jar'])
+        testCompile 'junit:junit:4.12'
+        compile 'com.android.support:appcompat-v7:23.1.1'
+        compile 'com.android.support:design:23.1.1'
+        compile 'com.android.support:cardview-v7:23.1.1'
+        compile 'com.android.support:recyclerview-v7:23.1.1'
+        compile 'com.android.support:support-v4:23.1.1'
+        compile 'com.android.support:percent:23.1.1'
+        compile "com.google.android.gms:play-services:8.3.0"
+        compile 'com.google.code.gson:gson:2.5'
+        compile 'com.squareup.retrofit:retrofit:2.0.0-beta3'
+        compile 'com.squareup.retrofit:converter-gson:2.0.0-beta2'
+        compile 'com.github.bumptech.glide:glide:3.6.1'
+        compile 'com.amulyakhare:com.amulyakhare.textdrawable:1.0.1'
+        // The Apptentive SDK
+        compile 'com.apptentive:apptentive-android:2.1.3@aar'
+    }
+}

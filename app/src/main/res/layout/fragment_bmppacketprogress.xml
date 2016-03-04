@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:card_view="http://schemas.android.com/apk/res-auto"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_cards"
+        android:layout_marginLeft="@dimen/margin_cards"
+        android:layout_marginRight="@dimen/margin_cards"
+        android:background="@color/secondary_text"
+        card_view:cardCornerRadius="@dimen/card_radius">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/ll_awb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/a_color"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_cards"
+                    android:text="@string/earning_title"
+                    android:textAppearance="?attr/textAppearanceListItem"
+                    android:textColor="@color/icons"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_cards"
+                    android:text="dummy"
+                    android:textAppearance="?attr/textAppearanceListItem"
+                    android:textColor="@color/icons"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_dimen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_awb"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_cards"
+                    android:text="@string/size_label"
+                    android:textAppearance="?attr/textAppearanceListItem"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/packet_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_cards"
+                    android:text="value"
+                    android:textAppearance="?attr/textAppearanceListItem"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_cards"
+                    android:text="@string/weight_label"
+                    android:textAppearance="?attr/textAppearanceListItem"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/packet_weight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_cards"
+                    android:text="value"
+                    android:textAppearance="?attr/textAppearanceListItem"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_delivery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_dimen"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/margin_cards"
+                    android:text="@string/location_title"
+                    android:textAppearance="?attr/textAppearanceListItem"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tv_delivery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_cards"
+                    android:text="value"
+                    android:textAppearance="?attr/textAppearanceListItem"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_delivery"
+                android:background="@color/black_overlay">
+
+                <LinearLayout
+                    android:id="@+id/ll_tobepicked"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/btn_release"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/button_height"
+                        android:layout_weight=".5"
+                        android:background="@drawable/selector_click"
+                        android:elevation="@dimen/button_elevation"
+                        android:gravity="center"
+                        android:text="@string/btn_pkt_release_text"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/icons"/>
+
+                    <View
+                        android:layout_width=".5dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"/>
+
+                    <TextView
+                        android:id="@+id/btn_pick"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/button_height"
+                        android:layout_weight=".5"
+                        android:background="@drawable/selector_click"
+                        android:elevation="@dimen/button_elevation"
+                        android:gravity="center"
+                        android:text="@string/btn_pick_text"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/icons"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_picked"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/btn_update"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/button_height"
+                        android:layout_weight=".5"
+                        android:background="@drawable/selector_click"
+                        android:elevation="@dimen/button_elevation"
+                        android:gravity="center"
+                        android:text="@string/btn_update_pkt_text"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/icons"/>
+
+                    <View
+                        android:layout_width=".5dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"/>
+
+                    <TextView
+                        android:id="@+id/btn_deliver"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/button_height"
+                        android:layout_weight=".5"
+                        android:background="@drawable/selector_click"
+                        android:elevation="@dimen/button_elevation"
+                        android:gravity="center"
+                        android:text="@string/btn_deliver_pkt_text"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/icons"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

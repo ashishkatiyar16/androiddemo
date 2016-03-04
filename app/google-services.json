@@ -1,0 +1,70 @@
+{
+  "project_info": {
+    "project_id": "bmpclub-1180",
+    "project_number": "593299017430",
+    "name": "BMPClub"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:593299017430:android:d18805d8deda7bc0",
+        "client_id": "android:com.bookmypacket.bmpclub",
+        "client_type": 1,
+        "android_client_info": {
+          "package_name": "com.bookmypacket.bmpclub"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "593299017430-1hp00fk19nbaclr0kgbaveob5fruef8l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bookmypacket.bmpclub",
+            "certificate_hash": "630E4B49D5658AF46B22610336CA10B3E3CE9670"
+          }
+        },
+        {
+          "client_id": "593299017430-kbtegst3d90repu5ouae79332072n02c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bookmypacket.bmpclub",
+            "certificate_hash": "7B47BAFC01E5DB36F257AD14AF3BA8C42B90810C"
+          }
+        },
+        {
+          "client_id": "593299017430-cfehsp90l27htv9eerrmg962afrjdmia.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bookmypacket.bmpclub",
+            "certificate_hash": "93F4DEF08A6C6CCBA17EF019A014A6A18462ABDF"
+          }
+        }
+      ],
+      "api_key": [],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-71984524-1"
+          }
+        },
+        "cloud_messaging_service": {
+          "status": 2,
+          "apns_config": []
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": []
+        },
+        "google_signin_service": {
+          "status": 1
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "client_info": [],
+  "ARTIFACT_VERSION": "1"
+}
